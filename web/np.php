@@ -11,7 +11,7 @@ if(KEY != $_GET["key"]) {
     exit;
 }
 
-$rawJson = @file_get_contents("https://www.bronyradiogermany.com/request-v2/json/v1/nowplaying/stream");
+$rawJson = @file_get_contents("https://panel.bronyradiogermany.com/api/streaminfo/stream");
 
 if($rawJson === false) {
     echo "error";
