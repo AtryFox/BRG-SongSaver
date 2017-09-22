@@ -43,6 +43,14 @@ After the Arduino sent the request, the WiFi module will go back to sleep.
 To get a nice and tidy list of all your saved titles, open up your web browser and navigate to `/web/index.html`. This page requires JavaScript to work, the data will be loaded via AJAX every 5 seconds.
 
 
+## Blink codes ##
+| Code           | Description                                              |
+|----------------|----------------------------------------------------------|
+| 3 short blinks | The ESP8266 is connecting to your wifi                   |
+| 5 short blinks | API error (e.g. wrong key or unavaiable server)          |
+| 1 long blink   | API success (the api returned `done`) The data is saved. |
+
+
 ## Tips ##
 #### Adding a HTTPS exception to your .htaccess file ####
 As described above, accessing `/web/np.php` thorugh the ESP8266 using HTTPS is not supported yet.
