@@ -22,10 +22,10 @@ ESP8266 sketch + web API/frontend to save the title and artist of the current so
 1. Rename `/sketch/config-default.h` to `/sketch/config.h` and open it.
     * Put in your Wifi SSID and password
     * Put in the url to access `/web/np.php`. Note that this url has to contain the `key` parameter.
-    ```
-    http://yourdomain.de/path/web/np.php?key=PUT_YOUR_KEY_HERE
-    ```
-
+    
+      ```
+      http://yourdomain.de/path/web/np.php?key=PUT_YOUR_KEY_HERE
+      ```
     * If you want, you can also change the pin used for the button.
 2. Upload `/sketch/sketch.ino` to your ESP8266 using for example the Arduino IDE.
     * You need to have additional boards installed in the Arduino IDE, to be able to upload the sketch. Check out this Repo to find out how it works: https://github.com/esp8266/Arduino
